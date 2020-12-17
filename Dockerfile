@@ -4,8 +4,8 @@ FROM alfianandaa/alf:groovy
 #
 # Clone repo and prepare working directory
 #
-RUN git clone -b master https://github.com/alfianandaa/ProjectAlf /home/projectalf/
-RUN mkdir /home/projectalf/bin/
-WORKDIR /home/projectalf/
+RUN git clone -b master https://github.com/kontol98/botwa /home/botwa/
+RUN mkdir /home/botwa/bin/
+WORKDIR /home/botwa/
 
-CMD ["python3","-m","userbot"]
+CMD ["node","index.js"]
